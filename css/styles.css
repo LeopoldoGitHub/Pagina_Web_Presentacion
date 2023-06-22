@@ -1,0 +1,273 @@
+/*NOTA:Se abrevia SC para "según consigna" como indicativo de las consignas dadas en cada sección.*/
+
+/* Aquí les dejamos como ayuda este "reset" en el cual ajustamos algunas propiedades
+*  cuyos valores asigna por defecto el navegador.
+*/
+
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* Para que el scrolleo en la one page sea suave */
+    scroll-behavior: smooth;
+}
+
+/* Para quitar los puntos a los items de listas */
+ul {
+    list-style: none;
+}
+
+/* Para que los enlaces hereden el color de texto y no tengan subrayado */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Este max-width es para que el contenido no se "estire" demasiado hacia los costados y
+*  el margin: auto; para tenerlo centrado fácilmente ;)
+*/
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+body{
+/*configuración general SC*/
+font-family: 'Lato', sans-serif;
+background-color: #fbfbfb;
+font-size: 18px;
+line-height: 1.2;
+padding-top: 90px;/*tengo que seguir ajustando este parámetro*/
+min-height: 100vh;
+width: 100%;
+max-width: 1200px;
+}
+
+.contenedor-header{
+width: 100vw;
+
+}
+
+header {
+    display: flexbox;
+    height: 90px;/*alto de sección SC*/
+    /*Fijando header SC*/
+    width: 100%;/* hacemos que el header ocupe el ancho completo de la página */
+	left: 0; /* Posicionamos el header al lado izquierdo */
+	top: 0; /* Posicionamos el header pegado arriba */
+	position: fixed; /* Hacemos que el header tenga una posición fija */
+    background-color: #fbfbfb;
+    width: 100vw;
+    max-width: 1200px;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+   
+}
+.menu-lista{
+    display: flex;
+    justify-content:flex-end;
+    width: 100%;
+}
+.menu-lista a{
+    color: #af599e;
+}
+.hr{
+    height: 5px;
+    width: 100%;
+    background-image: radial-gradient(
+        farthest-side at 50% -50%,
+        hsla(0, 0%, 0%, 0.5),
+        hsla(0, 0%, 0%, 0));
+    position: fixed; 
+}
+ul li{
+    display: inline-block;
+    justify-content: space-between;
+    margin-inline: 1rem;
+}
+
+.img-logo{
+    margin-top: -25px;
+    width: 50px;
+    height: 50px;
+    border:2px solid #c5d4df;
+
+}
+
+span{
+    color: #7298ac;
+}
+
+.img-foto{
+    width: 400px;
+    max-width: 100%;
+	height: 400px;
+    border-radius: 100%;
+    padding: 2rem 2rem;
+    object-fit: cover;
+}
+.inicio-div{
+    text-align:center;
+}
+.img-redes{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+}
+p{
+    padding-top:20px;
+    padding-bottom:20px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    text-align: center;
+    text-justify: distribute;
+}
+
+.tituloPrincipal{
+    font-size: 36px;/*tamaño de texto de botón SC*/
+
+
+}
+.tituloSecundario{
+    font-size: 28px;/*tamaño de texto de botón SC*/
+    padding-top: 20px;
+
+}
+
+.menu-redes{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.Contacto-div{
+    background-color: rgba(175, 89, 158, 0.3);
+    color:  #0f0f0f;
+    margin-top: 10rem;
+    margin-bottom: 2rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    text-align:center;
+    border-radius: 15px; /*bordes redondos*/
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+}
+
+
+
+/*Creación de apariencia de botón SC*/
+
+.botonDescargar {
+    font-size: 20px;/*tamaño de texto de botón SC*/
+    border: 1px none #2e518b; /*anchura, estilo y color borde*/
+    padding: 10px; /*espacio alrededor texto*/
+    background-color:  #af599e; /*color botón SC*/
+    color:  #fbfbfb; /*color texto SC*/
+    text-decoration: none; /*decoración texto*/
+    border-radius: 50px; /*bordes redondos*/
+    list-style-type: none;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+}
+
+footer{
+      background-color: #af599e;/*color fondo sección SC*/
+      color:  #fbfbfb;/*color texto SC*/
+      height: 90px;/*alto de sección SC*/
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+
+@media (max-width:700px) {
+        main{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            max-width: 100%;
+            min-height: 100vh;
+        }
+        body{
+            width: 100%;
+            max-width: 100%;
+            min-height: 100vh;
+
+        }
+        .img-foto{
+            width: 400px;
+            max-width: 100%;
+            height: 400px;
+            border-radius: 100%;
+            padding: 2rem 2rem;
+            object-fit: cover;
+        }
+}
+
+@media (max-width:300px) {
+    main{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 100%;
+        min-height: 100vh;
+    }
+    body{
+        width: 100%;
+        max-width: 100%;
+        min-height: 100vh;
+
+    }
+    .img-foto{
+        width: 200px;
+        max-width: 100%;
+        height: 200px;
+        border-radius: 100%;
+        padding: 2rem 2rem;
+        object-fit: cover;
+    }
+
+    nav{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .menu-lista{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .hr{
+        display: none;
+    }
+    header{
+        height: 90px;
+    }
+
+}
+
+/* Recomendaciones! 
+*  - Comenzar desde lo más general y luego ir hacia lo mas específico, asignando primero
+*    "estilos generales". Una buena idea sería comenzar por el <body> ;)
+*
+*  - Recuerden que queremos evitar "repetir código", en CSS usando la cualidad de la herencia
+*    podemos setear ciertas propiedades en un elemento padre y dejar que sean heredadas (por ejemplo: font-size)
+*
+*  - Nadie sabe todas las propiedades CSS de memoria, si no saben como hacer algo no lo recuerdan, la respuesta
+*    pueden encontrarla buscando en la web algo como "CSS como hacer ... " o "propiedad css para hacer ..."
+*
+*  - Usen mucho las herramientas para desarrolladores del navegador para ir
+*    probando el CSS que escriben, resolver dudas y problemas.
+*
+*  - Paciencia, resiliencia y creatividad! No se desanimen, las primeras experiencias maquetando con HTML y CSS
+*    pueden ser frustrantes, pero estas habilidades se van desarrollando con la experiencia, es como aprender
+*    un trabajo manual, hacer una artesanía, tocar un instrumento musical... la práctica es todo!
+*/

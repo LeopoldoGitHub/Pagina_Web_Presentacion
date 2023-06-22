@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leopoldo Flores</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<!-- La estructura básica y la vinculación con CSS estan listas. A codear! 💪  -->
+<!-- En este archivo escriban su HTML -->
+
+<!-- Creo esta Div para aplicar mobile first facilmente a todas las secciones al mismo tiempo -->
+<body>
+    <div class="contenedor-header"><!--wrapper-->
+        <header>
+            <nav class="nav">
+                <div class="logo">
+                    <img class="img-logo" src="./img/LOGO11.jpg">
+                </div>
+                <ul class="menu-lista">
+                    <li class="menu-lista-item"><a href="#Inicio">Inicio</a></li>
+                    <li class="menu-lista-item"><a href="#Contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <hr class="hr">
+    <main>
+        <section class="Inicio" id="Inicio">
+            <div class="inicio-div">
+                <img class="img-foto" src="./img/foto.webp">
+                <h1 class="tituloPrincipal">Hola, soy <span>Leopoldo!</span></h1>
+                <p>Estoy desarrollando mis habilidades en tecnología, formándome en JavaScript, CSS, HTML, Python y Data Science , para ampliar mi conocimiento hacia el desarrollo Web y análisis de datos ;aportando mi visión de negocio a los proyectos en los que voy a participar. He trabajado en la industria petrolera como ingeniero en distintas actividades de seguimiento a la producción, analizando los indicadores derivados del proceso; detectando posibles desvíos para generar estadísticas e informes ejecutivos de gestión y realizando planes de ejecución para cumplir con los objetivos acordados . Me considero un profesional con adaptabilidad al cambio, interesado por las mejoras en los procesos y con orientación al logro de objetivos en un entorno colaborativo.</p>
+                <a class="botonDescargar" href="./documents/CV Ing Leopoldo. Producción.pdf">Descargar mi CV</a><!-- este enlace debe tener apariencia de botón. -->
+            </div>
+        </section>
+        <section class="Contacto" id="Contacto">
+            <div class="Contacto-div">
+                <h1 class="tituloSecundario">Hablemos!</h1>
+                <p>Si quieres que forme parte de tu equipo de trabajo, estás interesado en enviarme alguna información
+                    de interés o quieres ver mis redes, te invito a darle click a los íconos siguientes...</p>
+            </div>
+            <ul class="menu-redes">
+                <li class="menu-lista-redes"><a href="mailto:leopoldofloresc@gmail.com" target="_blank"><img class="img-redes" src="./img/mail.png"></a></li> <!-- Este ícono debe enviar un email-->
+                <li class="menu-lista-redes"><a href="https://leopoldogithub.github.io/mi-proyecto-LeopoldoF/"><img class="img-redes" src="./img/github.png"></a></li>
+                <li class="menu-lista-redes"><a href="https://ar.linkedin.com/in/leopoldofloresc?trk=profile-badge"><img class="img-redes" src="./img/linkedin.png"></a></li>
+                </ul>
+        </section>
+    </main>
+    <footer>
+        &copy;Leopoldo Flores 2023
+    </footer>
+
+</body>
+
+</html>
